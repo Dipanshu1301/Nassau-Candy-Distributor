@@ -133,7 +133,7 @@ def section_title(text):
 # ===========================================================
 @st.cache_data
 def load_data():
-    file_path=Path(__file__).parent / "Data" / "cleaned_data.csv"
+    file_path = Path(__file__).parent / "DATA" / "cleaned_data.csv"
     df=pd.read_csv(file_path, parse_dates=["Order Date","Ship Date"])
     return df
 
