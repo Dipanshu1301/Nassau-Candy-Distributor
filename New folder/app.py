@@ -132,7 +132,7 @@ def section_title(text):
 # ===========================================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/cleaned_data.csv", parse_dates=["Order Date", "Ship Date"])
+    df = pd.read_csv("DATA/cleaned_data.csv", parse_dates=["Order Date", "Ship Date"])
     return df
 
 df = load_data()
